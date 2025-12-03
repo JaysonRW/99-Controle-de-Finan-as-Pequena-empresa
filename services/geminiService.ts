@@ -1,6 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { Transaction, TransactionType } from "../types";
-import { v4 as uuidv4 } from 'uuid'; // Assumption: Using a simple ID generator or fallback
 
 // Helper for simple ID generation if uuid package isn't available in this specific runtime env
 const generateId = () => Math.random().toString(36).substr(2, 9);
